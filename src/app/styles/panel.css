@@ -16,7 +16,6 @@
   display: flex;
   align-content: center;
   padding: 8px 12px 8px 8px;
-  margin-bottom: 8px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -47,7 +46,7 @@
 }
 
 .panel-body-errors {
-  padding-top: 16px;
+  /* padding-top: 16px; */
   height: 100%;
 }
 
@@ -68,6 +67,8 @@
 
 .filter-pills {
   padding: 12px;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 
 .pill {
@@ -96,6 +97,7 @@
   line-height: 14px;
   margin-left: 4px;
   padding: 4px 4px;
+  color: #d2d2d2;
 }
 
 .selected {
@@ -147,8 +149,10 @@
 }
 
 .errors-list {
-  margin: -16px 0 0;
-  padding: 0 16px 84px;
+  /* margin: -16px 0 0; */
+  margin: 0;
+  /* padding: 0px 84px; */
+  padding-inline-start: 0;
   /* overflow-y: scroll; */
 }
 
@@ -158,11 +162,9 @@
 
 .error-list-item {
   position: relative;
-  padding: 12px 16px 12px 12px;
-  border: 1px solid #e5e5e5;
+  padding: 8px 16px 8px 12px;
+  border-bottom: 1px solid #e5e5e5;
   color: #333333;
-  margin-bottom: 12px;
-  border-radius: 12px;
   display: flex;
   flex-flow: row wrap;
   align-content: center;
@@ -170,14 +172,12 @@
   font-size: 11px;
   line-height: 13px;
   font-weight: 600;
-  transition: border-color 100ms ease;
-  box-shadow: 0px 2px 2px 0px #0000000a;
   background: #fff;
 }
 
 .error-list-item:hover {
-  border-color: #18a0fb;
   cursor: pointer;
+  background-color: #f2f2f2;
 }
 
 .flex-row {
@@ -212,9 +212,9 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 30px;
-  width: 30px;
-  flex-basis: 30px;
+  height: 48px;
+  width: 48px;
+  flex-basis: 48px;
   flex-shrink: 0;
   background: #f6f6f6;
   align-self: center;
@@ -224,8 +224,8 @@
 .error-type img {
   display: inline-block;
   margin: auto;
-  height: 12px;
-  width: 12px;
+  height: 16px;
+  width: 16px;
 }
 
 .context-icon {
@@ -327,10 +327,10 @@
   text-align: center;
 }
 
-/* .bulk-errors-list .css-preloader {
-  height: 90%;
+.bulk-errors-list {
+  height: 100%;
   margin-bottom: 16px;
-} */
+}
 
 .css-preloader-row {
   position: relative;
@@ -369,4 +369,22 @@
     transform: scale(0.85);
     opacity: 1;
   }
+}
+
+.imitation-button {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+  background-color: none;
+  border: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0; /* Optional: Remove any default padding */
+}
+
+.imitation-button:hover {
+  color: #128ba6;
+  text-decoration: underline;
 }

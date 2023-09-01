@@ -2,7 +2,7 @@ import * as React from "react";
 import { motion } from "framer-motion/dist/framer-motion";
 
 import ListItem from "./ListItem";
-import TotalErrorCount from "./TotalErrorCount";
+import TotalErrorCount from "./TotalResultsCount";
 
 function NodeList(props) {
   // Reduce the size of our array of errors by removing

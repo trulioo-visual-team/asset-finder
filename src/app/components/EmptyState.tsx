@@ -28,13 +28,7 @@ function EmptyState(props) {
         <div className="empty-state__image">
           <img className="layer-icon" src={require("../assets/new-logo.svg")} />
         </div>
-        <div className="empty-state__title">Select a layer to get started.</div>
-        <button
-          className="button button--primary button--full"
-          onClick={onRunApp}
-        >
-          Run Design Lint
-        </button>
+        <div className="empty-state__title">Search for an asset.</div>
       </div>
     </motion.div>
   );

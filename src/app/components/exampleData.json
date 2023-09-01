@@ -1,0 +1,137 @@
+[
+  {
+    "name": "No Results from Filter/Search",
+    "description": "Use when no results are returned from filtering or searching through a table.",
+    "type": "Illustration",
+    "tags": ["filter", "table", "data"],
+    "info": [
+      {
+        "type": "Illustration",
+        "content": "a31f422a4666f2326dcbc7c2e8b722a83d5a3870",
+        "var": "Component"
+      },
+      {
+        "type": "Title Text",
+        "content": "No results found",
+        "id": 1,
+        "var": "String"
+      },
+      {
+        "type": "Body Text",
+        "content": "We don’t have anything to show you that matches the filters you applied to this table of data.",
+        "id": 0,
+        "var": "String"
+      }
+    ],
+    "id": "a31f422a4666f2326dcbc7c2e8b722a83d5a3870",
+    "svg": "no_result"
+  },
+  {
+    "name": "No Entries Yet",
+    "description": "Use when there are no entries in a table yet.",
+    "type": "Illustration",
+    "tags": ["entry", "table", "data"],
+    "info": [
+      {
+        "type": "Illustration",
+        "content": "459f1f411c8bb3a6bb960d587bf0f3ee563d7270",
+        "var": "Component"
+      },
+      {
+        "type": "Title Text",
+        "content": "No entries yet",
+        "id": 1,
+        "var": "String"
+      },
+      {
+        "type": "Body Text",
+        "content": "When things become available, they’ll show up here.",
+        "id": 0,
+        "var": "String"
+      }
+    ],
+    "id": "459f1f411c8bb3a6bb960d587bf0f3ee563d7270",
+    "svg": "no_entry"
+  },
+  {
+    "name": "No Internet",
+    "description": "Use when no internet occurs",
+    "type": "Illustration",
+    "tags": ["internet"],
+    "id": "0fa22361141559e2e60c23eda7afe41733993c0f",
+    "svg": "no_internet",
+    "info": [
+      {
+        "type": "Illustration",
+        "content": "0fa22361141559e2e60c23eda7afe41733993c0f",
+        "var": "Component"
+      },
+      {
+        "type": "Title Text",
+        "content": "Check your connection",
+        "id": 1,
+        "var": "String"
+      },
+      {
+        "type": "Body Text",
+        "content": "Check your wifi or internet connection and give it another try.",
+        "id": 0,
+        "var": "String"
+      }
+    ]
+  },
+  {
+    "name": "Favorite Section",
+    "description": "Use in a 'favorite's' section",
+    "type": "Illustration",
+    "tags": ["favorite", "section"],
+    "id": "8b2680a22f2ca67f5496f63f48246384b7c13210",
+    "svg": "favorite",
+    "info": [
+      {
+        "type": "Illustration",
+        "content": "8b2680a22f2ca67f5496f63f48246384b7c13210",
+        "var": "Component"
+      },
+      {
+        "type": "Title Text",
+        "content": "Pick your favorites.",
+        "id": 1,
+        "var": "String"
+      },
+      {
+        "type": "Body Text",
+        "content": "Favorite your most used workflows so they're always close to hand.",
+        "id": 0,
+        "var": "String"
+      }
+    ]
+  },
+  {
+    "name": "Workflow Section",
+    "description": "Use when in an empty workflow section",
+    "type": "Illustration",
+    "tags": ["empty", "workflow"],
+    "id": "acc93906eb0e7a8cb8b42ca4bbed9ae7fddc2d44",
+    "svg": "planet",
+    "info": [
+      {
+        "type": "Illustration",
+        "content": "acc93906eb0e7a8cb8b42ca4bbed9ae7fddc2d44",
+        "var": "Component"
+      },
+      {
+        "type": "Title Text",
+        "content": "Find your workflows.",
+        "id": 1,
+        "var": "String"
+      },
+      {
+        "type": "Body Text",
+        "content": "This is where all of your workflows live. Start one whenever you’re ready.",
+        "id": 0,
+        "var": "String"
+      }
+    ]
+  }
+]
