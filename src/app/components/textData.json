@@ -4,8 +4,8 @@
     "description": "Contains countries within the dropdown",
     "tags": ["filter", "table", "data"],
     "products": ["all"],
-    "swap": 1,
     "level": 3,
+    "swap": 1,
     "info": [
       {
         "swap": 0,
@@ -55,6 +55,8 @@
     "name": "Filter List",
     "description": "Contains filter within tables",
     "tags": ["filter", "table", "data"],
+    "products": ["docv", "pm"],
+    "level": 1,
     "swap": 0,
     "info": [
       {
@@ -93,8 +95,6 @@
           }
         ]
       }
-    ],
-    "products": ["docv", "pm"],
-    "level": 1
+    ]
   }
 ]
