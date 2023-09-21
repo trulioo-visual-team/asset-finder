@@ -181,15 +181,40 @@ export function customCheckTextFills(node, errors) {
 }
 ```
 
-#### Import your function in controller.ts
-Once you've written some custom functions for checking specific rules, make sure to [import your function here](https://github.com/destefanis/design-lint/blob/master/src/plugin/controller.ts#L8) in the controller.ts file.
+#### JSON Data Structure
 
-Let's say we've written a custom rule for text layers, make sure to [change what functions run for text layers here](https://github.com/destefanis/design-lint/blob/master/src/plugin/controller.ts#L367) under the `lintTextRules` function.
+```Illustration
 
-
-#### Changing the border radius default
-
-If you plan on using this app as a private plugin you'll likely want to change the default border radius values which are `[0, 2, 4, 8, 16, 24, 32]`. This can be acheived by changing these values in [App.tsx](./src/app/components/App.tsx#L23) and in [controller.ts](./src/plugin/controller.ts#L12). 
+{
+    "name": "No Results from Filter/Search",
+    "description": "Use when no results are returned from filtering or searching through a table.",
+    "tags": ["filter", "table", "data"],
+    "useCase": "table",
+    "products": "All Products",
+    "level":1,
+    "id": "a31f422a4666f2326dcbc7c2e8b722a83d5a3870",
+    "svg": "no_result",
+    "info": [
+      {
+        "type": "Illustration",
+        "content": "a31f422a4666f2326dcbc7c2e8b722a83d5a3870",
+        "var": "Component"
+      },
+      {
+        "type": "Title Text",
+        "content": "No results found",
+        "id": 1,
+        "var": "String"
+      },
+      {
+        "type": "Body Text",
+        "content": "We don’t have anything to show you that matches the filters you applied to this table of data.",
+        "id": 0,
+        "var": "String"
+      }
+    ]
+  }
+```
 
 ### Tooling
 This repo is using following:

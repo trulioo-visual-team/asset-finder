@@ -22,6 +22,42 @@ async function swapInstance(key) {
   }
 }
 
+const testArray = [
+  "Australia",
+  "Brazil",
+  "Canada",
+  "China",
+  "France",
+  "Germany",
+  "United States"
+];
+
+// swap all test
+async function swapAll() {
+  for (
+    let i = 0;
+    i < testArray.length && i < figma.currentPage.selection.length;
+    i++
+  ) {
+    if (figma.currentPage.selection[i].type == "TEXT") {
+      await Promise.all(
+        figma.currentPage.selection[i]
+          .getRangeAllFontNames(
+            0,
+            figma.currentPage.selection[i].characters.length
+          )
+          .map(figma.loadFontAsync)
+      );
+      figma.currentPage.selection[i].deleteCharacters(
+        0,
+        figma.currentPage.selection[i].characters.length
+      );
+      figma.currentPage.selection[i].insertCharacters(0, testArray[i]);
+    }
+    console.log("DONE");
+  }
+}
+
 // swap text
 async function swapText(text) {
   if (figma.currentPage.selection[0].type == "TEXT") {
@@ -104,5 +140,12 @@ figma.ui.onmessage = msg => {
   }
   if (msg.type === "close") {
     figma.closePlugin();
+  }
+
+  if (msg.type === "testSwapAll") {
+    swapAll();
+  }
+  if (msg.type === "swapText") {
+    swapText(msg.content);
   }
 };

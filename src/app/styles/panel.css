@@ -16,6 +16,7 @@
   display: flex;
   align-content: center;
   padding: 8px 12px 8px 8px;
+  /* margin-bottom: 8px; */
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -25,7 +26,7 @@
 
 .panel-header__title {
   flex: 1;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 13px;
   color: #333;
   display: flex;
@@ -38,6 +39,10 @@
 
 .panel-collapse-icon {
   width: 16px;
+}
+
+.action-icon {
+  width: 10px;
 }
 
 .panel-body {
@@ -151,7 +156,7 @@
 .errors-list {
   /* margin: -16px 0 0; */
   margin: 0;
-  /* padding: 0px 84px; */
+  padding: 0px 0px 153px;
   padding-inline-start: 0;
   /* overflow-y: scroll; */
 }
@@ -162,7 +167,22 @@
 
 .error-list-item {
   position: relative;
-  padding: 8px 16px 8px 12px;
+  padding: 12px 16px 12px 16px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #333333;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 600;
+  background: #fff;
+}
+
+.error-list-item-none {
+  position: relative;
+  padding: 12px 16px 12px 16px;
   border-bottom: 1px solid #e5e5e5;
   color: #333333;
   display: flex;
@@ -195,7 +215,7 @@
 
 /* The content of the error, could be #fff, a font name, etc. */
 .current-value {
-  margin-top: 4px;
+  /* margin-top: 4px; */
   width: 100%;
   color: #666;
   font-size: 11px;
@@ -205,7 +225,10 @@
 
 .error-description {
   align-self: center;
-  margin-left: 12px;
+  /* margin-left: 12px; */
+  grid-gap: 4px;
+  display: flex;
+  flex-direction: column;
 }
 
 .error-type {
@@ -387,4 +410,46 @@
 .imitation-button:hover {
   color: #128ba6;
   text-decoration: underline;
+}
+
+select {
+  width: 50%;
+  padding: 12px 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  border: 2px solid transparent;
+  background-color: #fff;
+  cursor: "pointer";
+  appearance: none; /* Remove default styles (e.g., arrows) on some browsers */
+  -webkit-appearance: none button !important;
+  -moz-appearance: none button !important;
+  appearance: none button !important;
+  cursor: pointer;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: #e5e5e5;
+}
+
+select:focus {
+  outline: none; /* Remove the default focus outline */
+  border: 2px solid #00a3ff; /* Change the border color when focused */
+}
+
+.chevron-icon {
+  margin-left: -30px; /* Adjust the margin to control the icon's position */
+  cursor: pointer;
+  align-self: center;
+}
+
+.nested-item-item {
+  display: flex;
+  flex-direction: row;
+  padding: 2px 16px 2px 20px;
+  margin-bottom: -1px;
+  border-bottom: 1px solid #e5e5e5;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0px;
 }

@@ -8,7 +8,6 @@ function PanelHeader(props) {
 
   const handleSubmit = () => {
     dispatch(removeItem());
-    console.log("Back to results");
   };
 
   return (

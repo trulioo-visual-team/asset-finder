@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Country List",
+    "description": "Contains countries within the dropdown",
+    "tags": ["filter", "table", "data"],
+    "swap": 1,
+    "info": [
+      {
+        "swap": 0,
+        "title": "Australia",
+        "items": [
+          {
+            "type": "text",
+            "content": "Australia"
+          },
+          {
+            "type": "svg",
+            "content": "australia"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Brazil",
+        "items": [
+          {
+            "type": "text",
+            "content": "Brazil"
+          },
+          {
+            "type": "svg",
+            "content": "brazil"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Canada",
+        "items": [
+          {
+            "type": "text",
+            "content": "Canada"
+          },
+          {
+            "type": "svg",
+            "content": "canada"
+          }
+        ]
+      }
+    ],
+    "products": ["all"],
+    "level": 3
+  },
+  {
+    "name": "Filter List",
+    "description": "Contains filter within tables",
+    "tags": ["filter", "table", "data"],
+    "swap": 0,
+    "info": [
+      {
+        "swap": 1,
+        "title": "Document Type",
+        "items": [
+          {
+            "type": "text",
+            "content": "Driver's License"
+          },
+          {
+            "type": "text",
+            "content": "Passport"
+          },
+          {
+            "type": "text",
+            "content": "ID"
+          }
+        ]
+      },
+      {
+        "swap": 1,
+        "title": "Result",
+        "items": [
+          {
+            "type": "text",
+            "content": "Accepted"
+          },
+          {
+            "type": "text",
+            "content": "Declined"
+          },
+          {
+            "type": "text",
+            "content": "Error"
+          }
+        ]
+      }
+    ],
+    "products": ["docv", "pm"],
+    "level": 1
+  }
+]

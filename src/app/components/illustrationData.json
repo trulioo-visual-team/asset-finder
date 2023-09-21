@@ -2,8 +2,12 @@
   {
     "name": "No Results from Filter/Search",
     "description": "Use when no results are returned from filtering or searching through a table.",
-    "type": "Illustration",
     "tags": ["filter", "table", "data"],
+    "useCase": "table",
+    "products": "All Products",
+    "level": 1,
+    "id": "a31f422a4666f2326dcbc7c2e8b722a83d5a3870",
+    "svg": "no_result",
     "info": [
       {
         "type": "Illustration",
@@ -22,15 +26,18 @@
         "id": 0,
         "var": "String"
       }
-    ],
-    "id": "a31f422a4666f2326dcbc7c2e8b722a83d5a3870",
-    "svg": "no_result"
+    ]
   },
   {
     "name": "No Entries Yet",
     "description": "Use when there are no entries in a table yet.",
     "type": "Illustration",
     "tags": ["entry", "table", "data"],
+    "useCase": "table",
+    "products": "All Products",
+    "level": 1,
+    "id": "459f1f411c8bb3a6bb960d587bf0f3ee563d7270",
+    "svg": "no_entry",
     "info": [
       {
         "type": "Illustration",
@@ -49,9 +56,7 @@
         "id": 0,
         "var": "String"
       }
-    ],
-    "id": "459f1f411c8bb3a6bb960d587bf0f3ee563d7270",
-    "svg": "no_entry"
+    ]
   },
   {
     "name": "No Internet",
@@ -78,7 +83,10 @@
         "id": 0,
         "var": "String"
       }
-    ]
+    ],
+    "useCase": "internet",
+    "products": "All Products",
+    "level": 3
   },
   {
     "name": "Favorite Section",
@@ -105,7 +113,10 @@
         "id": 0,
         "var": "String"
       }
-    ]
+    ],
+    "useCase": "decorative",
+    "products": "Workflow Studios",
+    "level": 4
   },
   {
     "name": "Workflow Section",
@@ -132,6 +143,69 @@
         "id": 0,
         "var": "String"
       }
-    ]
+    ],
+    "useCase": "decorative",
+    "products": "Workflow Studios",
+    "level": 4
+  },
+  {
+    "name": "Workflow Section",
+    "description": "Use when in an empty workflow section",
+    "type": "Illustration",
+    "tags": ["empty", "workflow"],
+    "id": "acc93906eb0e7a8cb8b42ca4bbed9ae7fddc2d44",
+    "svg": "planet",
+    "info": [
+      {
+        "type": "Illustration",
+        "content": "acc93906eb0e7a8cb8b42ca4bbed9ae7fddc2d44",
+        "var": "Component"
+      },
+      {
+        "type": "Title Text",
+        "content": "Find your workflows.",
+        "id": 1,
+        "var": "String"
+      },
+      {
+        "type": "Body Text",
+        "content": "This is where all of your workflows live. Start one whenever you’re ready.",
+        "id": 0,
+        "var": "String"
+      }
+    ],
+    "useCase": "decorative",
+    "products": "Workflow Studios",
+    "level": 4
+  },
+  {
+    "name": "Workflow Section",
+    "description": "Use when in an empty workflow section",
+    "type": "Illustration",
+    "tags": ["empty", "workflow"],
+    "id": "acc93906eb0e7a8cb8b42ca4bbed9ae7fddc2d44",
+    "svg": "planet",
+    "info": [
+      {
+        "type": "Illustration",
+        "content": "acc93906eb0e7a8cb8b42ca4bbed9ae7fddc2d44",
+        "var": "Component"
+      },
+      {
+        "type": "Title Text",
+        "content": "Find your workflows.",
+        "id": 1,
+        "var": "String"
+      },
+      {
+        "type": "Body Text",
+        "content": "This is where all of your workflows live. Start one whenever you’re ready.",
+        "id": 0,
+        "var": "String"
+      }
+    ],
+    "useCase": "decorative",
+    "products": "Workflow Studios",
+    "level": 4
   }
 ]

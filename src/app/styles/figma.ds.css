@@ -398,18 +398,18 @@
   align-items: center;
   width: 100%;
   height: 30px;
-  margin: 1px 0 1px 0;
+  margin: 0;
   padding: 8px 4px 8px 7px;
-  color: rgba(0, 0, 0, 0.8);
-  border: 1px solid transparent;
+  color: #121212;
+  border: 1px solid #e5e5e5;
   border-radius: 2px;
   outline: none;
   background-color: #ffffff;
 }
 
 .input:hover {
-  color: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #121212;
+  border: 1px solid #e5e5e5;
 }
 
 .input::-moz-selection {
@@ -506,25 +506,22 @@
   align-items: center;
   width: 100%;
   height: 30px;
-  margin: 1px 0 1px 0;
-  padding: 8px 4px 8px 0;
-  text-indent: 32px;
-  color: rgba(0, 0, 0, 0.8);
-  border: 1px solid transparent;
+  margin: 0;
+  padding: 8px 4px 8px 0px;
+  text-indent: 12px;
+  color: #121212;
+  border: 2px solid transparent;
   border-radius: 2px;
   outline: none;
   background-color: #ffffff;
 }
 
 .input-icon__input:hover {
-  color: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .input-icon__input:active,
 .input-icon__input:focus {
-  margin-left: -1px;
-  padding: 8px 4px 8px 0;
+  padding: 7px 3px 7px 0;
   color: #000000;
   border: 2px solid #18a0fb;
   border-radius: 2px;
@@ -556,28 +553,17 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.input-icon__input:not(:disabled):not(:hover):placeholder-shown {
-  border: 1px solid transparent;
+/* .input-icon__input:not(:disabled):not(:hover):placeholder-shown {
+  border: none;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcAAAAABCAYAAABJ5n7WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgSURBVHgB7cMBCQAACMTAiR3sX1TQHr+DK2B+I0lSjj29qAEYlIbeBgAAAABJRU5ErkJggg==");
   background-repeat: no-repeat;
   background-position: center bottom -0.9px;
   background-size: calc(100% - 10px) 1px;
-}
+  
+} */
 
 .input-icon__input:not(:disabled):focus:placeholder-shown {
   border: 2px solid #18a0fb;
-}
-
-.input-icon__input:not(:disabled):focus:not(:placeholder-shown) {
-  padding-left: 0;
-}
-
-.input-icon__input:disabled {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.input-icon__input:disabled:hover {
-  border: 1px solid transparent;
 }
 
 .textarea {
@@ -593,13 +579,12 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: calc(100% - 16px);
+  width: 100%;
   min-height: 62px;
-  margin: 1px 8px 1px 8px;
+  margin: 0;
   padding: 7px 7px 7px 7px;
-  resize: none;
-  color: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #121212;
+  border: 1px solid #e5e5e5;
   border-radius: 2px;
   outline: none;
   background-color: #ffffff;

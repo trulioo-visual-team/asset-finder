@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState, useRef, useEffect } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion/dist/framer-motion";
 import { useDispatch } from "react-redux";
 import { selectItem } from "../redux/slice/dataSlice";
@@ -18,16 +18,6 @@ function SearchResultsItem(props) {
 
   const dropItem = () => {
     dispatch(selectItem(data));
-
-    // parent.postMessage(
-    //   {
-    //     pluginMessage: {
-    //       type: "dropItem",
-    //       id: data.id
-    //     }
-    //   },
-    //   "*"
-    // );
   };
 
   return (
@@ -41,12 +31,16 @@ function SearchResultsItem(props) {
       initial="initial"
       animate="enter"
       exit="exit"
-      type={data.type.toLowerCase()}
+      // type={data.type.toLowerCase()}
     >
-      <div className="flex-row">
-        <span>
-          <img src={require("../assets/illustration/" + data.svg + ".svg")} />
-        </span>
+      <div className="flex-row" style={{ gridGap: 12 }}>
+        {props.variant === "illustration" ? (
+          <span>
+            <img src={require("../assets/illustration/" + data.svg + ".svg")} />
+          </span>
+        ) : (
+          ""
+        )}
         <span className="error-description">
           <div className="error-description__message">{data.name}</div>
           <div className="current-value">{data.description}</div>

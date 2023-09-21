@@ -6,18 +6,10 @@ import { motion } from "framer-motion/dist/framer-motion";
 // in the bulk list of errors.
 
 function IndividualItem(props) {
-  const [buttonText, setButtonText] = useState(props.data.var);
-
-  const handleMouseEnter = () => {
-    setButtonText("Fill layer");
-  };
-
-  const handleMouseLeave = () => {
-    setButtonText(data.var);
-  };
-
   const ref = useRef();
+
   let data = props.data;
+  const [individualInput, setIndividualInput] = useState(data.content);
 
   const variants = {
     initial: {
@@ -37,12 +29,16 @@ function IndividualItem(props) {
     }
   };
 
+  const onChange = event => {
+    setIndividualInput(event.target.value);
+  };
+
   const dropItem = () => {
     parent.postMessage(
       {
         pluginMessage: {
           type: "dropdrop",
-          content: data.content,
+          content: individualInput,
           format: data.type
         }
       },
@@ -52,16 +48,7 @@ function IndividualItem(props) {
 
   return (
     <motion.li
-      className="error-list-item"
-      style={
-        props.value == 1
-          ? {
-              backgroundColor: "F2F2F2"
-            }
-          : {
-              backgroundColor: "#FFFFFF"
-            }
-      }
+      className="error-list-item-none"
       ref={ref}
       positionTransition
       // key={error.node.id + props.index}
@@ -69,71 +56,105 @@ function IndividualItem(props) {
       initial="initial"
       animate="enter"
       exit="exit"
-      type={data.type.toLowerCase()}
+      // type={data.type.toLowerCase()}
     >
-      <div className="flex-row" style={{ gridGap: 4 }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gridGap: 4,
+          flexGrow: 1
+        }}
+      >
+        <div className="error-description__message">{data.type}</div>
         {data.type == "Illustration" ? (
           <div
             style={{
               display: "flex",
               alignContent: "center",
-              justifyContent: "space-between",
-              width: "100vw"
+              justifyContent: "space-between"
             }}
           >
-            <span
-              className="error-description"
-              style={{
-                display: "flex",
-                gridGap: "4px",
-                flexDirection: "column"
-              }}
-            >
-              <div className="current-value">{data.type}</div>
-
-              <img
-                src={require("../assets/illustration/" + props.svg + ".svg")}
-              />
-            </span>
-            <button
-              className="imitation-button"
-              onClick={dropItem}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              {buttonText}{" "}
-            </button>
+            <img
+              src={require("../assets/illustration/" + props.svg + ".svg")}
+            />
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div>
+                <motion.button
+                  className="button--icon"
+                  onClick={dropItem}
+                  whileTap={{ scale: 0.9, opacity: 0.8 }}
+                >
+                  <img
+                    src={require("../assets/plus.svg")}
+                    style={{ width: 10 }}
+                  />
+                </motion.button>
+              </div>
+              <div>
+                <motion.button
+                  className="button--icon"
+                  onClick={dropItem}
+                  whileTap={{ scale: 0.9, opacity: 0.8 }}
+                >
+                  <img
+                    src={require("../assets/swap.svg")}
+                    style={{ width: 12 }}
+                  />
+                </motion.button>
+              </div>
+            </div>
           </div>
         ) : (
           <div
             style={{
               display: "flex",
-              alignContent: "center",
+              alignItems: "center",
               justifyContent: "space-between",
-              width: "100vw"
+              gridGap: 4
             }}
           >
-            <span
-              className="error-description"
-              style={{
-                display: "flex",
-                gridGap: "4px",
-                flexDirection: "column"
-              }}
-            >
-              <div className="current-value">{data.type}</div>
-              <div className="error-description__message">{data.content}</div>
-            </span>
-            <button
-              className="imitation-button"
-              onClick={dropItem}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              {buttonText}{" "}
-            </button>
+            {data.content.length <= 20 ? (
+              <input
+                type="input"
+                className="input"
+                value={individualInput}
+                onChange={onChange}
+              />
+            ) : (
+              <textarea className="textarea" onChange={onChange}>
+                {individualInput}
+              </textarea>
+            )}
+
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div>
+                <motion.button
+                  className="button--icon"
+                  onClick={dropItem}
+                  whileTap={{ scale: 0.9, opacity: 0.8 }}
+                >
+                  <img
+                    src={require("../assets/plus.svg")}
+                    style={{ width: 10 }}
+                  />
+                </motion.button>
+              </div>
+              <div>
+                <motion.button
+                  className="button--icon"
+                  onClick={dropItem}
+                  whileTap={{ scale: 0.9, opacity: 0.8 }}
+                >
+                  <img
+                    src={require("../assets/swap.svg")}
+                    style={{ width: 12 }}
+                  />
+                </motion.button>
+              </div>
+            </div>
           </div>
-        )}{" "}
+        )}
       </div>
     </motion.li>
   );
