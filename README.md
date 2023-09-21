@@ -1,4 +1,4 @@
-# Design Lint
+# Asset Finder
 
 ![Design Lint Gif Example](https://github.com/destefanis/design-lint/blob/master/assets/lint-example.gif)
 
@@ -181,40 +181,99 @@ export function customCheckTextFills(node, errors) {
 }
 ```
 
-#### JSON Data Structure
+## JSON Data Structure
 
-```Illustration
-
+```json
 {
+  // Name
     "name": "No Results from Filter/Search",
+  // Description
     "description": "Use when no results are returned from filtering or searching through a table.",
+  // Tags to parse when text searching
     "tags": ["filter", "table", "data"],
+  // Use case for filters
     "useCase": "table",
+  // Product usage
     "products": "All Products",
+  // "Best Match" filter level, 
     "level":1,
-    "id": "a31f422a4666f2326dcbc7c2e8b722a83d5a3870",
+  // SVG equivelent
     "svg": "no_result",
+  // Actual content
     "info": [
       {
+  // name
         "type": "Illustration",
+  // content for illustrations: componentID
         "content": "a31f422a4666f2326dcbc7c2e8b722a83d5a3870",
+  // content type
         "var": "Component"
       },
       {
+  // name
         "type": "Title Text",
+  // content for text: text
         "content": "No results found",
-        "id": 1,
-        "var": "String"
-      },
-      {
-        "type": "Body Text",
-        "content": "We don’t have anything to show you that matches the filters you applied to this table of data.",
-        "id": 0,
+  // content type
         "var": "String"
       }
     ]
   }
-```
+
+```json
+{
+  
+    "name": "Country List",
+    "description": "Contains countries within the dropdown",
+    "tags": ["filter", "table", "data"],
+    "products": ["all"],
+    "swap": 1,
+    "level": 3,
+    "info": [
+      {
+        "swap": 0,
+        "title": "Australia",
+        "items": [
+          {
+            "type": "text",
+            "content": "Australia"
+          },
+          {
+            "type": "svg",
+            "content": "australia"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Brazil",
+        "items": [
+          {
+            "type": "text",
+            "content": "Brazil"
+          },
+          {
+            "type": "svg",
+            "content": "brazil"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Canada",
+        "items": [
+          {
+            "type": "text",
+            "content": "Canada"
+          },
+          {
+            "type": "svg",
+            "content": "canada"
+          }
+        ]
+      }
+    ]
+  }
 
 ### Tooling
 This repo is using following:

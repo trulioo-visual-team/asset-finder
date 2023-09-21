@@ -3,7 +3,9 @@
     "name": "Country List",
     "description": "Contains countries within the dropdown",
     "tags": ["filter", "table", "data"],
+    "products": ["all"],
     "swap": 1,
+    "level": 3,
     "info": [
       {
         "swap": 0,
@@ -47,9 +49,7 @@
           }
         ]
       }
-    ],
-    "products": ["all"],
-    "level": 3
+    ]
   },
   {
     "name": "Filter List",
