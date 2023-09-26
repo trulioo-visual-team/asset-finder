@@ -24,13 +24,6 @@ function SearchResultsList(props) {
 
   const handleSort = event => {
     dispatch(setSort(event.target.value));
-    if (event.target.value == "bm") {
-      filteredIllustration.sort((a, b) => a.level - b.level);
-      filteredText.sort((a, b) => a.level - b.level);
-    } else {
-      filteredIllustration.sort((a, b) => a.name - b.name);
-      filteredText.sort((a, b) => a.name - b.name);
-    }
     resetList();
   };
 
@@ -61,6 +54,7 @@ function SearchResultsList(props) {
   const filteredIllustration =
     props.sort == "bm" && props.variant == "illustration"
       ? data
+          .sort((a, b) => a.name.localeCompare(b.name))
           .sort((a, b) => a.level - b.level)
           .filter(item => {
             return (
