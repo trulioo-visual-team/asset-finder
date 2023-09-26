@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import PanelHeader from "./PanelHeader";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 
@@ -145,6 +145,17 @@ function IndividualPage(props) {
             </div>
           </div>
         </div>
+        {/* {props.variant === "illustration" ? "" : (
+          <input
+          type="input"
+          className="input-icon__input"
+          placeholder="Search"
+          style={{ height: 37, borderRadius: 0, borderBottom:"1px solid #e5e5e5" }}
+          value={search}
+          onChange={handleSearchChange}
+        />
+        )} */}
+
         {props.variant === "illustration" ? (
           <List data={props.data} variant={props} />
         ) : (

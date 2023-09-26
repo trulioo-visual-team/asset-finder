@@ -13,13 +13,13 @@ import { useDispatch } from "react-redux";
 
 function SearchResultsList(props) {
   const dispatch = useDispatch();
-  const [list, setList] = useState("");
 
   const data = props.variant === "illustration" ? illustration : text;
 
   // handle sort and filter
   const handleFilter = event => {
     dispatch(setFilter(event.target.value));
+    resetList();
   };
 
   const handleSort = event => {
@@ -32,7 +32,6 @@ function SearchResultsList(props) {
       filteredText.sort((a, b) => a.name - b.name);
     }
     resetList();
-    setList(resultListItems);
   };
 
   const resetList = () => {
@@ -60,7 +59,7 @@ function SearchResultsList(props) {
   // activate the products filter *********************
   // Filter the result list based on the selected filters
   const filteredIllustration =
-    props.sort == "bm"
+    props.sort == "bm" && props.variant == "illustration"
       ? data
           .sort((a, b) => a.level - b.level)
           .filter(item => {
@@ -70,7 +69,7 @@ function SearchResultsList(props) {
                 test(item.tags))
             );
           })
-      : props.sort == "aup"
+      : props.sort == "aup" && props.variant == "illustration"
       ? data
           .sort((a, b) => a.name.localeCompare(b.name))
           .filter(item => {
@@ -80,7 +79,8 @@ function SearchResultsList(props) {
                 test(item.tags))
             );
           })
-      : data
+      : props.sort == "adown" && props.variant == "illustration"
+      ? data
           .sort((a, b) => b.name.localeCompare(a.name))
           .filter(item => {
             return (
@@ -88,10 +88,11 @@ function SearchResultsList(props) {
               (item.name.toLowerCase().includes(props.search.toLowerCase()) ||
                 test(item.tags))
             );
-          });
+          })
+      : [];
 
   const filteredText =
-    props.sort == "bm"
+    props.sort == "bm" && props.variant == "text"
       ? data
           .sort((a, b) => a.level - b.level)
           .filter(item => {
@@ -291,7 +292,13 @@ function SearchResultsList(props) {
       </div>
 
       <div className="footer sticky-footer">
-        <TotalResultsCount totalResult={filteredIllustration.length} />
+        <TotalResultsCount
+          totalResult={
+            props.variant == "illustration"
+              ? filteredIllustration.length
+              : filteredText.length
+          }
+        />
       </div>
     </motion.div>
   );

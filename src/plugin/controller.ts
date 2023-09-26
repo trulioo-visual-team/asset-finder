@@ -30,6 +30,8 @@ async function swapInstance(key) {
   if (figma.currentPage.selection[0].type == "INSTANCE") {
     let importComponent = await figma.importComponentByKeyAsync(key);
     figma.currentPage.selection[0].swapComponent(importComponent);
+  } else {
+    figma.notify("Swapping components can only be done with an instance");
   }
 }
 
@@ -74,6 +76,8 @@ async function swapText(text) {
       figma.currentPage.selection[0].characters.length
     );
     figma.currentPage.selection[0].insertCharacters(0, text);
+  } else {
+    figma.notify("Swapping text can only be done with text");
   }
 }
 
@@ -236,10 +240,18 @@ figma.ui.onmessage = msg => {
         figma.currentPage.selection[0].type == "INSTANCE"
       ) {
         swapInstance(msg.content);
+      } else {
+        figma.notify("Swapping components can only be done with an instance", {
+          timeout: 1000
+        });
       }
     } else {
       if (figma.currentPage.selection[0].type == "TEXT") {
         swapText(msg.content);
+      } else {
+        figma.notify("Swapping text can only be done with text", {
+          timeout: 1000
+        });
       }
     }
   }

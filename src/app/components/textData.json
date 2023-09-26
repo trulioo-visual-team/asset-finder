@@ -1,10 +1,10 @@
 [
   {
     "name": "Country List",
-    "description": "Contains countries within the dropdown",
-    "tags": ["filter", "table", "data"],
+    "description": "List of countries and corresponding flags",
+    "tags": ["filter", "table", "countries", "flag"],
     "products": ["all"],
-    "level": 3,
+    "level": 1,
     "swap": 1,
     "info": [
       {
@@ -388,10 +388,354 @@
     ]
   },
   {
-    "name": "General Filter List",
-    "description": "Contains general filters that are used in combination with tables",
-    "tags": ["filter", "table", "data"],
+    "name": "Date of Birth",
+    "description": "List of birthdays with yyyy/mm/dd, dd/mm/yyyy, and mm/dd/yyyy configurations",
+    "tags": ["filter", "table", "dob", "birthday"],
     "products": ["all"],
+    "level": 1,
+    "swap": 0,
+    "info": [
+      {
+        "swap": 1,
+        "title": "yyyy/mm/dd",
+        "items": [
+          {
+            "type": "string",
+            "content": "1979/07/01"
+          },
+          {
+            "type": "string",
+            "content": "1992/06/15"
+          },
+          {
+            "type": "string",
+            "content": "2003/03/31"
+          },
+          {
+            "type": "string",
+            "content": "1979/05/22"
+          },
+          {
+            "type": "string",
+            "content": "1953/10/24"
+          },
+          {
+            "type": "string",
+            "content": "1998/11/12"
+          },
+          {
+            "type": "string",
+            "content": "2001/03/23"
+          },
+          {
+            "type": "string",
+            "content": "1993/02/12"
+          },
+          {
+            "type": "string",
+            "content": "1962/03/06"
+          },
+          {
+            "type": "string",
+            "content": "1989/12/12"
+          }
+        ]
+      },
+      {
+        "swap": 1,
+        "title": "dd/mm/yyyy",
+        "items": [
+          {
+            "type": "string",
+            "content": "01/07/1979"
+          },
+          {
+            "type": "string",
+            "content": "15/06/1992"
+          },
+          {
+            "type": "string",
+            "content": "31/03/2003"
+          },
+          {
+            "type": "string",
+            "content": "25/02/1979"
+          },
+          {
+            "type": "string",
+            "content": "24/10/1953"
+          },
+          {
+            "type": "string",
+            "content": "12/11/1998"
+          },
+          {
+            "type": "string",
+            "content": "23/03/2001"
+          },
+          {
+            "type": "string",
+            "content": "12/02/1993"
+          },
+          {
+            "type": "string",
+            "content": "06/03/1962"
+          },
+          {
+            "type": "string",
+            "content": "12/12/1989"
+          }
+        ]
+      },
+      {
+        "swap": 1,
+        "title": "mm/dd/yyyy",
+        "items": [
+          {
+            "type": "string",
+            "content": "07/01/1979"
+          },
+          {
+            "type": "string",
+            "content": "06/15/1992"
+          },
+          {
+            "type": "string",
+            "content": "03/31/2003"
+          },
+          {
+            "type": "string",
+            "content": "05/22/1979"
+          },
+          {
+            "type": "string",
+            "content": "10/24/1953"
+          },
+          {
+            "type": "string",
+            "content": "11/12/1998"
+          },
+          {
+            "type": "string",
+            "content": "03/23/2001"
+          },
+          {
+            "type": "string",
+            "content": "02/12/1993"
+          },
+          {
+            "type": "string",
+            "content": "03/06/1962"
+          },
+          {
+            "type": "string",
+            "content": "12/12/1989"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Full Name",
+    "description": "List of names with full name, first name, and last name configurations",
+    "tags": ["filter", "table", "result", "results", "status"],
+    "products": ["all"],
+    "level": 1,
+    "swap": 0,
+    "info": [
+      {
+        "swap": 1,
+        "title": "Full Name",
+        "items": [
+          {
+            "type": "string",
+            "content": "Emily Johnson"
+          },
+          {
+            "type": "string",
+            "content": "Benjamin Smith"
+          },
+          {
+            "type": "string",
+            "content": "Mia Davis"
+          },
+          {
+            "type": "string",
+            "content": "William Anderson"
+          },
+          {
+            "type": "string",
+            "content": "Harper Wilson"
+          },
+          {
+            "type": "string",
+            "content": "Ethan Martinez"
+          },
+          {
+            "type": "string",
+            "content": "Ava Brown"
+          },
+          {
+            "type": "string",
+            "content": "Liam Taylor"
+          },
+          {
+            "type": "string",
+            "content": "Olivia Lee"
+          },
+          {
+            "type": "string",
+            "content": "Lucas Jones"
+          }
+        ]
+      },
+      {
+        "swap": 1,
+        "title": "First Name",
+        "items": [
+          {
+            "type": "string",
+            "content": "Emily"
+          },
+          {
+            "type": "string",
+            "content": "Benjamin"
+          },
+          {
+            "type": "string",
+            "content": "Mia"
+          },
+          {
+            "type": "string",
+            "content": "William"
+          },
+          {
+            "type": "string",
+            "content": "Harper"
+          },
+          {
+            "type": "string",
+            "content": "Ethan"
+          },
+          {
+            "type": "string",
+            "content": "Ava"
+          },
+          {
+            "type": "string",
+            "content": "Liam"
+          },
+          {
+            "type": "string",
+            "content": "Olivia"
+          },
+          {
+            "type": "string",
+            "content": "Lucas"
+          }
+        ]
+      },
+      {
+        "swap": 1,
+        "title": "Last Name",
+        "items": [
+          {
+            "type": "string",
+            "content": "Johnson"
+          },
+          {
+            "type": "string",
+            "content": "Smith"
+          },
+          {
+            "type": "string",
+            "content": "Davis"
+          },
+          {
+            "type": "string",
+            "content": "Anderson"
+          },
+          {
+            "type": "string",
+            "content": "Wilson"
+          },
+          {
+            "type": "string",
+            "content": "Martinez"
+          },
+          {
+            "type": "string",
+            "content": "Brown"
+          },
+          {
+            "type": "string",
+            "content": "Taylor"
+          },
+          {
+            "type": "string",
+            "content": "Lee"
+          },
+          {
+            "type": "string",
+            "content": "Jones"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Service Names",
+    "description": "List of official names for Trulioo services",
+    "tags": ["filter", "table", "result", "results"],
+    "products": ["all"],
+    "level": 1,
+    "swap": 0,
+    "info": [
+      {
+        "swap": 1,
+        "title": "Service Name",
+        "items": [
+          {
+            "type": "string",
+            "content": "Workflow Studios"
+          },
+          {
+            "type": "string",
+            "content": "Person Match"
+          },
+          {
+            "type": "string",
+            "content": "Business Data"
+          },
+          {
+            "type": "string",
+            "content": "Identity Document Verification"
+          },
+          {
+            "type": "string",
+            "content": "eID"
+          },
+          {
+            "type": "string",
+            "content": "Utility ID"
+          },
+          {
+            "type": "string",
+            "content": "Person Watchlist Screening"
+          },
+          {
+            "type": "string",
+            "content": "Business Watchlist Screening"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Transaction Result (DocV)",
+    "description": "Results returned from running service transactions. This list is specifically used within DocV",
+    "tags": ["filter", "table", "result", "results", "status"],
+    "products": ["docv"],
     "level": 1,
     "swap": 0,
     "info": [
@@ -409,6 +753,38 @@
           },
           {
             "type": "string",
+            "content": "Review"
+          },
+          {
+            "type": "string",
+            "content": "Error"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Transaction Status (Client Manager)",
+    "description": "Results returned from running service transactions. This list is specifically used within Client Manager.",
+    "tags": ["filter", "table", "result", "results"],
+    "products": ["wfs"],
+    "level": 1,
+    "swap": 0,
+    "info": [
+      {
+        "swap": 1,
+        "title": "Status",
+        "items": [
+          {
+            "type": "string",
+            "content": "Accepted"
+          },
+          {
+            "type": "string",
+            "content": "Rejected"
+          },
+          {
+            "type": "string",
             "content": "In progress"
           },
           {
@@ -416,61 +792,15 @@
             "content": "Pending review"
           }
         ]
-      },
-      {
-        "swap": 1,
-        "title": "Countries",
-        "items": [
-          {
-            "type": "string",
-            "content": "Afganistan"
-          },
-          {
-            "type": "string",
-            "content": "Aruba"
-          },
-          {
-            "type": "string",
-            "content": "Australia"
-          },
-          {
-            "type": "string",
-            "content": "Austria"
-          },
-          {
-            "type": "string",
-            "content": "Belgium"
-          },
-          {
-            "type": "string",
-            "content": "Brazil"
-          },
-          {
-            "type": "string",
-            "content": "Canada"
-          },
-          {
-            "type": "string",
-            "content": "China"
-          },
-          {
-            "type": "string",
-            "content": "Czech Republic"
-          },
-          {
-            "type": "string",
-            "content": "Denmark"
-          }
-        ]
       }
     ]
   },
   {
-    "name": "Specialized Filter List",
-    "description": "Contains product-specific filters that are used in combination with tables",
-    "tags": ["filter", "table", "data"],
-    "products": ["all"],
-    "level": 1,
+    "name": "Document Types",
+    "description": "List of acceptable document types supported by DocV. Can also be used as a table filter.",
+    "tags": ["filter", "table", "document"],
+    "products": ["docv"],
+    "level": 3,
     "swap": 0,
     "info": [
       {
@@ -494,25 +824,17 @@
             "content": "Visa"
           }
         ]
-      },
-      {
-        "swap": 1,
-        "title": "Entities",
-        "items": [
-          {
-            "type": "string",
-            "content": "All Businesses"
-          },
-          {
-            "type": "string",
-            "content": "Businesses with PSCs"
-          },
-          {
-            "type": "string",
-            "content": "Individuals"
-          }
-        ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Workflow Names",
+    "description": "Workflow names can be used when designing workflows or populating dropdowns.",
+    "tags": ["workflow", "table", "filter"],
+    "products": ["wfs"],
+    "level": 3,
+    "swap": 0,
+    "info": [
       {
         "swap": 1,
         "title": "Workflows",
@@ -543,7 +865,7 @@
           },
           {
             "type": "string",
-            "content": "MM 2022 Demo"
+            "content": "mm 2022 Demo"
           },
           {
             "type": "string",
@@ -556,6 +878,34 @@
           {
             "type": "string",
             "content": "KYB to KYC"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Entities",
+    "description": "Entities are user types such as person and buisness. These can be used within table filters to differentiate between persons and businesses",
+    "tags": ["filter", "table", "person", "buisness"],
+    "products": ["wfs"],
+    "level": 3,
+    "swap": 0,
+    "info": [
+      {
+        "swap": 1,
+        "title": "Entities",
+        "items": [
+          {
+            "type": "string",
+            "content": "All Businesses"
+          },
+          {
+            "type": "string",
+            "content": "Businesses with PSCs"
+          },
+          {
+            "type": "string",
+            "content": "Individuals"
           }
         ]
       }

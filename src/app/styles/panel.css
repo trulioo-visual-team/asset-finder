@@ -355,6 +355,11 @@
   margin-bottom: 16px;
 }
 
+.test {
+  height: calc(100vh - 41px);
+  margin-bottom: 16px;
+}
+
 .css-preloader-row {
   position: relative;
   margin: auto;
