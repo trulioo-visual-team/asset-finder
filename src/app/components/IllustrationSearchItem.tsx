@@ -43,7 +43,7 @@ function SearchResultsItem(props) {
         )}
         <span className="error-description">
           <div className="error-description__message">{data.name}</div>
-          <div className="current-value">{data.description}</div>
+          <div className="current-value truncate">{data.description}</div>
         </span>
       </div>
     </motion.li>

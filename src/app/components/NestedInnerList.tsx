@@ -3,7 +3,7 @@ import NestedInnerItem from "./NestedInnerItem";
 
 const NestedInnerList = props => {
   const nestedInnerItems = props.data.items.map(el => (
-    <NestedInnerItem data={el} test={0} />
+    <NestedInnerItem data={el} test={0} title={props.data.title} />
   ));
 
   return (

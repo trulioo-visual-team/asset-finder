@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion/dist/framer-motion";
 
 const NestedInnerItem = props => {
-  const dropItem = () => {
+  const swapItem = () => {
     // activate this
     if (props.test == 1) {
       parent.postMessage(
@@ -10,7 +10,7 @@ const NestedInnerItem = props => {
           pluginMessage: {
             type: "testSwapAll"
             //   content: data.content,
-            //   format: data.type
+            // format: props.data.type
           }
         },
         "*"
@@ -19,8 +19,9 @@ const NestedInnerItem = props => {
       parent.postMessage(
         {
           pluginMessage: {
-            type: "swapText",
-            content: props.data.content
+            type: "swapItem",
+            content: props.data.content,
+            format: props.data.type
           }
         },
         "*"
@@ -28,13 +29,28 @@ const NestedInnerItem = props => {
     }
   };
 
+  const addItem = () => {
+    // activate this
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "addItem",
+          content: props.data.content,
+          format: props.data.type
+        }
+      },
+      "*"
+    );
+  };
+
   return (
     <div className="nested-item-item">
-      {props.data.type === "text" || "swap" ? (
+      {props.data.type === "string" || props.data.type === "swap" ? (
         <div className="type--neg-small-normal"> {props.data.content} </div>
       ) : (
-        <div className="type--neg-small-normal"> {props.data.content} </div>
+        <img src={require("../assets/flag/" + props.title + ".svg")} />
       )}
+
       {props.data.type === "swap" ? (
         <div>
           <div
@@ -46,7 +62,7 @@ const NestedInnerItem = props => {
             <div>
               <motion.button
                 className="button--icon"
-                onClick={dropItem}
+                onClick={props.onClick}
                 whileTap={{
                   scale: 0.9,
                   opacity: 0.8
@@ -71,7 +87,7 @@ const NestedInnerItem = props => {
             <div>
               <motion.button
                 className="button--icon"
-                onClick={dropItem}
+                onClick={addItem}
                 whileTap={{
                   scale: 0.9,
                   opacity: 0.8
@@ -86,7 +102,7 @@ const NestedInnerItem = props => {
             <div>
               <motion.button
                 className="button--icon"
-                onClick={dropItem}
+                onClick={swapItem}
                 whileTap={{
                   scale: 0.9,
                   opacity: 0.8
@@ -100,7 +116,7 @@ const NestedInnerItem = props => {
             </div>
           </div>
         </div>
-      )}{" "}
+      )}
     </div>
   );
 };

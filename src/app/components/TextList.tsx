@@ -10,6 +10,31 @@ const TextList = props => {
       <NestedList data={el} variant={props.variant} />
     ));
 
+    const onClick = () => {
+      console.log(props.data);
+      let contentText = [];
+      let contentComponent = [];
+      props.data.info.forEach(el => {
+        el.items.forEach(x => {
+          if (x.type == "string") {
+            contentText.push(x.content);
+          } else if (x.type == "component") {
+            contentComponent.push(x.content);
+          }
+        });
+      });
+      parent.postMessage(
+        {
+          pluginMessage: {
+            type: "swapAllTextAndComponent",
+            contentText: contentText,
+            contentComponent: contentComponent
+          }
+        },
+        "*"
+      );
+    };
+
     // Framer motion variant for the list
     const listVariants = {
       hidden: {
@@ -48,6 +73,7 @@ const TextList = props => {
                 <NestedInnerItem
                   data={{ type: "swap", content: "Swap All" }}
                   test={1}
+                  onClick={onClick}
                 />
               </div>
             </div>

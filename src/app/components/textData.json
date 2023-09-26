@@ -9,15 +9,57 @@
     "info": [
       {
         "swap": 0,
+        "title": "Afghanistan",
+        "items": [
+          {
+            "type": "string",
+            "content": "Afghanistan"
+          },
+          {
+            "type": "component",
+            "content": "fbe3f030a86c0ffa7026e5506a77ceb26348f0be"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Aruba",
+        "items": [
+          {
+            "type": "string",
+            "content": "Aruba"
+          },
+          {
+            "type": "component",
+            "content": "a31cb98fd21495f4783bfca8eac328def046dc24"
+          }
+        ]
+      },
+      {
+        "swap": 0,
         "title": "Australia",
         "items": [
           {
-            "type": "text",
+            "type": "string",
             "content": "Australia"
           },
           {
-            "type": "svg",
-            "content": "australia"
+            "type": "component",
+            "content": "3c838b7493f070e76d311c66eddc2bc24b2e99e5"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Belgium",
+        "items": [
+          {
+            "type": "string",
+            "content": "Australia"
+          },
+          {
+            "type": "component",
+            "content": "014e0187e4868a324b184bde03dc60c97c1d109e"
           }
         ]
       },
@@ -26,12 +68,12 @@
         "title": "Brazil",
         "items": [
           {
-            "type": "text",
+            "type": "string",
             "content": "Brazil"
           },
           {
-            "type": "svg",
-            "content": "brazil"
+            "type": "component",
+            "content": "c086b9053dd1139f001d9319c9bb8024e7df2da9"
           }
         ]
       },
@@ -40,58 +82,480 @@
         "title": "Canada",
         "items": [
           {
-            "type": "text",
+            "type": "string",
             "content": "Canada"
           },
           {
-            "type": "svg",
-            "content": "canada"
+            "type": "component",
+            "content": "b388539254ed974fe33fc7cb34089c075476133e"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "China",
+        "items": [
+          {
+            "type": "string",
+            "content": "China"
+          },
+          {
+            "type": "component",
+            "content": "dc75598adb16b5eb0b8dac8a2c22b6218cf6d1c1"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Czech Republic",
+        "items": [
+          {
+            "type": "string",
+            "content": "Czech Republic"
+          },
+          {
+            "type": "component",
+            "content": "634dc4a92695eba1f573a633880abb3db0b3d7df"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Denmark",
+        "items": [
+          {
+            "type": "string",
+            "content": "Demark"
+          },
+          {
+            "type": "component",
+            "content": "6e4fabc84d845cda795968f9185e4d3aee623908"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Estonia",
+        "items": [
+          {
+            "type": "string",
+            "content": "Estonia"
+          },
+          {
+            "type": "component",
+            "content": "6a0d2911b4fca8183878c73fa967f542bc27c6cc"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "France",
+        "items": [
+          {
+            "type": "string",
+            "content": "France"
+          },
+          {
+            "type": "component",
+            "content": "ee5b5043cd6c505ae9bcd4845b71ff4d3baa203f"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Germany",
+        "items": [
+          {
+            "type": "string",
+            "content": "Germany"
+          },
+          {
+            "type": "component",
+            "content": "30e46189ccfe85b93180f83edb9c5a8a8fc6e390"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Hong Kong",
+        "items": [
+          {
+            "type": "string",
+            "content": "Hong Kong"
+          },
+          {
+            "type": "component",
+            "content": "255c5137d4d43eb3749dcf01ab639aba0e119064"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "India",
+        "items": [
+          {
+            "type": "string",
+            "content": "India"
+          },
+          {
+            "type": "component",
+            "content": "c3430e4cbc8019507cb5b3921edf111b047c3c46"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Ireland",
+        "items": [
+          {
+            "type": "string",
+            "content": "Ireland"
+          },
+          {
+            "type": "component",
+            "content": "1cdbb3da83ac9712e5bce7060920a87ebd405602"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Italy",
+        "items": [
+          {
+            "type": "string",
+            "content": "Italy"
+          },
+          {
+            "type": "component",
+            "content": "bec0fff08b6ce7f99f32e7f4e5412c67a5413e9e"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Japan",
+        "items": [
+          {
+            "type": "string",
+            "content": "Japan"
+          },
+          {
+            "type": "component",
+            "content": "757c74215e089b6b4e09b2c0c78b763b3c64dd47"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Netherlands",
+        "items": [
+          {
+            "type": "string",
+            "content": "Netherlands"
+          },
+          {
+            "type": "component",
+            "content": "149c56cd5f73a3624ed53fa892a8372c5f25c768"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "New Zealand",
+        "items": [
+          {
+            "type": "string",
+            "content": "New Zealand"
+          },
+          {
+            "type": "component",
+            "content": "d085737f621cd087c14c25e8e84cdaef780cc9e6"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Poland",
+        "items": [
+          {
+            "type": "string",
+            "content": "Poland"
+          },
+          {
+            "type": "component",
+            "content": "3fa00a8c99d70ab86dd70bd5af520a2a2b908dcf"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Romania",
+        "items": [
+          {
+            "type": "string",
+            "content": "Romania"
+          },
+          {
+            "type": "component",
+            "content": "46b0af0af4b20bab55beddedb030aa7282f73fc9"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Singapore",
+        "items": [
+          {
+            "type": "string",
+            "content": "Singapore"
+          },
+          {
+            "type": "component",
+            "content": "d3708b755b9583e3e1839f6fb1a1906ed99c90d3"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Spain",
+        "items": [
+          {
+            "type": "string",
+            "content": "Spain"
+          },
+          {
+            "type": "component",
+            "content": "5e371f82d6a4ace052f55236d5f3141d59e7b71d"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Sweden",
+        "items": [
+          {
+            "type": "string",
+            "content": "Sweden"
+          },
+          {
+            "type": "component",
+            "content": "e87b5a6c392ee812566e7e12842a2a430280baf4"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "Taiwan",
+        "items": [
+          {
+            "type": "string",
+            "content": "Taiwan"
+          },
+          {
+            "type": "component",
+            "content": "59b958e7d570e3aad36ab22feaa6839efa0e113d"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "United Kingdom",
+        "items": [
+          {
+            "type": "string",
+            "content": "United Kingdom"
+          },
+          {
+            "type": "component",
+            "content": "72e313e1884534e5b29ddd06b6be93d417fc40f8"
+          }
+        ]
+      },
+      {
+        "swap": 0,
+        "title": "United States",
+        "items": [
+          {
+            "type": "string",
+            "content": "United States"
+          },
+          {
+            "type": "component",
+            "content": "8485fd9786611ae9119671a8e1231466433edd15"
           }
         ]
       }
     ]
   },
   {
-    "name": "Filter List",
-    "description": "Contains filter within tables",
+    "name": "General Filter List",
+    "description": "Contains general filters that are used in combination with tables",
     "tags": ["filter", "table", "data"],
-    "products": ["docv", "pm"],
+    "products": ["all"],
     "level": 1,
     "swap": 0,
     "info": [
       {
         "swap": 1,
-        "title": "Document Type",
+        "title": "Results",
         "items": [
           {
-            "type": "text",
-            "content": "Driver's License"
+            "type": "string",
+            "content": "Accepted"
           },
           {
-            "type": "text",
-            "content": "Passport"
+            "type": "string",
+            "content": "Declined"
           },
           {
-            "type": "text",
-            "content": "ID"
+            "type": "string",
+            "content": "In progress"
+          },
+          {
+            "type": "string",
+            "content": "Pending review"
           }
         ]
       },
       {
         "swap": 1,
-        "title": "Result",
+        "title": "Countries",
         "items": [
           {
-            "type": "text",
-            "content": "Accepted"
+            "type": "string",
+            "content": "Afganistan"
           },
           {
-            "type": "text",
-            "content": "Declined"
+            "type": "string",
+            "content": "Aruba"
           },
           {
-            "type": "text",
-            "content": "Error"
+            "type": "string",
+            "content": "Australia"
+          },
+          {
+            "type": "string",
+            "content": "Austria"
+          },
+          {
+            "type": "string",
+            "content": "Belgium"
+          },
+          {
+            "type": "string",
+            "content": "Brazil"
+          },
+          {
+            "type": "string",
+            "content": "Canada"
+          },
+          {
+            "type": "string",
+            "content": "China"
+          },
+          {
+            "type": "string",
+            "content": "Czech Republic"
+          },
+          {
+            "type": "string",
+            "content": "Denmark"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Specialized Filter List",
+    "description": "Contains product-specific filters that are used in combination with tables",
+    "tags": ["filter", "table", "data"],
+    "products": ["all"],
+    "level": 1,
+    "swap": 0,
+    "info": [
+      {
+        "swap": 1,
+        "title": "Document Types",
+        "items": [
+          {
+            "type": "string",
+            "content": "Driver's License"
+          },
+          {
+            "type": "string",
+            "content": "Government-Issued ID"
+          },
+          {
+            "type": "string",
+            "content": "Passport"
+          },
+          {
+            "type": "string",
+            "content": "Visa"
+          }
+        ]
+      },
+      {
+        "swap": 1,
+        "title": "Entities",
+        "items": [
+          {
+            "type": "string",
+            "content": "All Businesses"
+          },
+          {
+            "type": "string",
+            "content": "Businesses with PSCs"
+          },
+          {
+            "type": "string",
+            "content": "Individuals"
+          }
+        ]
+      },
+      {
+        "swap": 1,
+        "title": "Workflows",
+        "items": [
+          {
+            "type": "string",
+            "content": "KYB Australia"
+          },
+          {
+            "type": "string",
+            "content": "PM Test"
+          },
+          {
+            "type": "string",
+            "content": "SEA Risk Research"
+          },
+          {
+            "type": "string",
+            "content": "Business Graph Possibilities"
+          },
+          {
+            "type": "string",
+            "content": "Training for SEA Customers"
+          },
+          {
+            "type": "string",
+            "content": "Test Workflow - Combining Services"
+          },
+          {
+            "type": "string",
+            "content": "MM 2022 Demo"
+          },
+          {
+            "type": "string",
+            "content": "Emerging Technologies"
+          },
+          {
+            "type": "string",
+            "content": "End-to-End KYB"
+          },
+          {
+            "type": "string",
+            "content": "KYB to KYC"
           }
         ]
       }

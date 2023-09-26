@@ -453,3 +453,12 @@ select:focus {
   justify-content: space-between;
   border-radius: 0px;
 }
+
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit the text to two lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add an ellipsis (...) to indicate truncation */
+  margin: 0; /* Remove any default margin */
+}

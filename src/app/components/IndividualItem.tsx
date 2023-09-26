@@ -33,11 +33,23 @@ function IndividualItem(props) {
     setIndividualInput(event.target.value);
   };
 
-  const dropItem = () => {
+  const addItem = () => {
     parent.postMessage(
       {
         pluginMessage: {
-          type: "dropdrop",
+          type: "addItem",
+          content: individualInput,
+          format: data.type
+        }
+      },
+      "*"
+    );
+  };
+  const swapItem = () => {
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "swapItem",
           content: individualInput,
           format: data.type
         }
@@ -66,8 +78,8 @@ function IndividualItem(props) {
           flexGrow: 1
         }}
       >
-        <div className="error-description__message">{data.type}</div>
-        {data.type == "Illustration" ? (
+        <div className="error-description__message">{data.name}</div>
+        {data.type == "component" ? (
           <div
             style={{
               display: "flex",
@@ -82,7 +94,7 @@ function IndividualItem(props) {
               <div>
                 <motion.button
                   className="button--icon"
-                  onClick={dropItem}
+                  onClick={addItem}
                   whileTap={{ scale: 0.9, opacity: 0.8 }}
                 >
                   <img
@@ -94,7 +106,7 @@ function IndividualItem(props) {
               <div>
                 <motion.button
                   className="button--icon"
-                  onClick={dropItem}
+                  onClick={swapItem}
                   whileTap={{ scale: 0.9, opacity: 0.8 }}
                 >
                   <img
@@ -122,16 +134,18 @@ function IndividualItem(props) {
                 onChange={onChange}
               />
             ) : (
-              <textarea className="textarea" onChange={onChange}>
-                {individualInput}
-              </textarea>
+              <textarea
+                className="textarea"
+                onChange={onChange}
+                value={individualInput}
+              />
             )}
 
             <div style={{ display: "flex", flexDirection: "row" }}>
               <div>
                 <motion.button
                   className="button--icon"
-                  onClick={dropItem}
+                  onClick={addItem}
                   whileTap={{ scale: 0.9, opacity: 0.8 }}
                 >
                   <img
@@ -143,7 +157,7 @@ function IndividualItem(props) {
               <div>
                 <motion.button
                   className="button--icon"
-                  onClick={dropItem}
+                  onClick={swapItem}
                   whileTap={{ scale: 0.9, opacity: 0.8 }}
                 >
                   <img

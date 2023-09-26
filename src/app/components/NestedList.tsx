@@ -27,13 +27,14 @@ function NestedList(props) {
     }
   };
 
-  const dropItem = () => {
+  const onClick = () => {
+    let content = [];
+    props.data.items.forEach(el => content.push(el.content));
     parent.postMessage(
       {
         pluginMessage: {
-          type: "dropdrop",
-          content: data.content,
-          format: data.type
+          type: "swapAllText",
+          content: content
         }
       },
       "*"
@@ -68,7 +69,10 @@ function NestedList(props) {
               overflow: "hidden"
             }}
           >
-            <NestedInnerItem data={{ type: "swap", content: "Swap All" }} />
+            <NestedInnerItem
+              data={{ type: "swap", content: "Swap All" }}
+              onClick={onClick}
+            />
           </div>
         ) : (
           ""

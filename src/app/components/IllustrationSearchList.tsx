@@ -31,7 +31,6 @@ function SearchResultsList(props) {
       filteredIllustration.sort((a, b) => a.name - b.name);
       filteredText.sort((a, b) => a.name - b.name);
     }
-    console.log(filteredIllustration);
     resetList();
     setList(resultListItems);
   };
@@ -66,7 +65,7 @@ function SearchResultsList(props) {
           .sort((a, b) => a.level - b.level)
           .filter(item => {
             return (
-              (props.filter === "all" || props.filter === item.useCase) &&
+              (props.filter === "all" || item.useCase.includes(props.filter)) &&
               (item.name.toLowerCase().includes(props.search.toLowerCase()) ||
                 test(item.tags))
             );
@@ -76,7 +75,7 @@ function SearchResultsList(props) {
           .sort((a, b) => a.name.localeCompare(b.name))
           .filter(item => {
             return (
-              (props.filter === "all" || props.filter === item.useCase) &&
+              (props.filter === "all" || item.useCase.includes(props.filter)) &&
               (item.name.toLowerCase().includes(props.search.toLowerCase()) ||
                 test(item.tags))
             );
@@ -85,7 +84,7 @@ function SearchResultsList(props) {
           .sort((a, b) => b.name.localeCompare(a.name))
           .filter(item => {
             return (
-              (props.filter === "all" || props.filter === item.useCase) &&
+              (props.filter === "all" || item.useCase.includes(props.filter)) &&
               (item.name.toLowerCase().includes(props.search.toLowerCase()) ||
                 test(item.tags))
             );
@@ -173,7 +172,6 @@ function SearchResultsList(props) {
       key="bulk-list"
     >
       <div>
-        <div className="input-icon__icon" style={{ top: 2 }}></div>
         <input
           type="input"
           className="input-icon__input"
@@ -211,7 +209,6 @@ function SearchResultsList(props) {
                 <option value="all">All Use Cases</option>
                 <option value="table">Table</option>
                 <option value="general">General</option>
-                <option value="internet">Internet</option>
                 <option value="decorative">Decorative</option>
               </select>
             ) : (
@@ -223,10 +220,13 @@ function SearchResultsList(props) {
                 value={props.filter}
               >
                 <option value="all">All Products</option>
+                <option value="wfs">Workflow Studios</option>
                 <option value="docv">DocV</option>
                 <option value="pm">Person Match</option>
                 <option value="eid">eID</option>
                 <option value="kyb">KYB</option>
+                <option value="ri">Risk Insights</option>
+                <option value="pf">Platform</option>
               </select>
             )}
             <img
