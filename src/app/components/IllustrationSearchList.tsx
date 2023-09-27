@@ -178,7 +178,8 @@ function SearchResultsList(props) {
         <div
           style={{
             flexGrow: 1,
-            display: "flex",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
             borderTop: "1px solid #e5e5e5",
             borderBottom: "1px solid #e5e5e5",
             justifyContent: "space-between"
@@ -190,13 +191,14 @@ function SearchResultsList(props) {
               display: "flex",
               position: "relative",
               alignItems: "center",
-              cursor: "pointer"
+              cursor: "pointer",
+              borderRight: "1px solid #e5e5e5"
             }}
           >
             {props.variant === "illustration" ? (
               <select
                 id="uniqueId"
-                className="select"
+                className="select-2"
                 onChange={handleFilter}
                 style={{ flexGrow: 1 }}
                 value={props.filter}
@@ -209,7 +211,7 @@ function SearchResultsList(props) {
             ) : (
               <select
                 id="uniqueId"
-                className="select"
+                className="select-2"
                 onChange={handleFilter}
                 style={{ flexGrow: 1 }}
                 value={props.filter}
@@ -229,7 +231,7 @@ function SearchResultsList(props) {
               style={{ width: 12, position: "absolute", right: 16 }}
             />
           </div>
-          <div className="vertical-line"></div>
+          {/* <div className="vertical-line"></div> */}
           <div
             style={{
               flexGrow: 1,
@@ -246,7 +248,7 @@ function SearchResultsList(props) {
               style={{ flexGrow: 1 }}
               value={props.sort}
             >
-              <option value="bm">Best Match</option>
+              <option value="bm">Frequently Used</option>
               <option value="aup">Alphabetical Up</option>
               <option value="adown">Alphabetical Down</option>
             </select>

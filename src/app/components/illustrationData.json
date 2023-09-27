@@ -20,7 +20,7 @@
       },
       {
         "name": "Body Text",
-        "content": "An error has occured. Try again.",
+        "content": "An error has occurred. Try again.",
         "type": "string"
       }
     ]
@@ -114,7 +114,7 @@
     ],
     "useCase": ["general"],
     "products": "All Products",
-    "level": 1,
+    "level": 2,
     "svg": "satellite",
     "info": [
       {
@@ -156,7 +156,7 @@
     "tags": ["prompt", "start", "guidance", "activation"],
     "useCase": ["decorative"],
     "products": "All Products",
-    "level": 1,
+    "level": 2,
     "svg": "search",
     "info": [
       {
@@ -386,7 +386,7 @@
     "tags": ["nothing", "error", "select", "service"],
     "useCase": ["general"],
     "products": "Workflow Studios",
-    "level": 1,
+    "level": 2,
     "svg": "person_building",
     "info": [
       {
@@ -512,7 +512,7 @@
     "tags": ["error", "stop", "incomplete", "internet"],
     "useCase": ["general"],
     "products": "All Products",
-    "level": 1,
+    "level": 2,
     "svg": "satellite",
     "info": [
       {

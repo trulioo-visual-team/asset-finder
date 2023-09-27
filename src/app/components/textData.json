@@ -736,7 +736,7 @@
     "description": "Results returned from running service transactions. This list is specifically used within DocV",
     "tags": ["filter", "table", "result", "results", "status"],
     "products": ["docv"],
-    "level": 1,
+    "level": 2,
     "swap": 0,
     "info": [
       {
@@ -768,7 +768,7 @@
     "description": "Results returned from running service transactions. This list is specifically used within Client Manager.",
     "tags": ["filter", "table", "result", "results"],
     "products": ["wfs"],
-    "level": 1,
+    "level": 2,
     "swap": 0,
     "info": [
       {
@@ -800,7 +800,7 @@
     "description": "List of acceptable document types supported by DocV. Can also be used as a table filter.",
     "tags": ["filter", "table", "document"],
     "products": ["docv"],
-    "level": 3,
+    "level": 2,
     "swap": 0,
     "info": [
       {
@@ -832,7 +832,7 @@
     "description": "Workflow names can be used when designing workflows or populating dropdowns.",
     "tags": ["workflow", "table", "filter"],
     "products": ["wfs"],
-    "level": 3,
+    "level": 1,
     "swap": 0,
     "info": [
       {
@@ -888,7 +888,7 @@
     "description": "Entities are user types such as person and buisness. These can be used within table filters to differentiate between persons and businesses",
     "tags": ["filter", "table", "person", "buisness"],
     "products": ["wfs"],
-    "level": 3,
+    "level": 1,
     "swap": 0,
     "info": [
       {

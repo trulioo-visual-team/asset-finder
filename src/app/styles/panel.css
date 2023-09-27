@@ -432,12 +432,32 @@ select {
   cursor: pointer;
 }
 
+select-2 {
+  width: 50%;
+  padding: 12px 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  border: 2px solid transparent;
+  background-color: #fff;
+  cursor: "pointer";
+  appearance: none; /* Remove default styles (e.g., arrows) on some browsers */
+  -webkit-appearance: none button !important;
+  -moz-appearance: none button !important;
+  appearance: none button !important;
+  cursor: pointer;
+}
+
 .vertical-line {
   width: 1px;
   background-color: #e5e5e5;
 }
 
 select:focus {
+  outline: none; /* Remove the default focus outline */
+  border: 2px solid #00a3ff; /* Change the border color when focused */
+}
+
+select-2:focus {
   outline: none; /* Remove the default focus outline */
   border: 2px solid #00a3ff; /* Change the border color when focused */
 }
